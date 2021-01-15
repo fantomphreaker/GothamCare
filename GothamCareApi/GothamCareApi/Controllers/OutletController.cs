@@ -1,4 +1,5 @@
-﻿using GothamCareApi.OutletData;
+﻿using GothamCareApi.Models;
+using GothamCareApi.OutletData;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,15 @@ namespace GothamCareApi.Controllers
         public IActionResult GetOutlets()
         {
             return Ok(_outletData.GetOutlets());
+        }
+
+        [HttpPost]
+        [Route("api/[controller]")]
+        public IActionResult GetOutlet(Outlet outlet)
+        {
+            _outletData.AddOutlet(outlet);
+
+            return Created(HttpContext.Request.Scheme + "://" + HttpContext.Request.Host + HttpContext.Request.Path + "/" + outlet.Id, outlet);
         }
 
     }

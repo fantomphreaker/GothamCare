@@ -15,7 +15,10 @@ namespace GothamCareApi.OutletData
         }
         public Outlet AddOutlet(Outlet outlet)
         {
-            throw new NotImplementedException();
+            _gothamCareApiContext.Outlets.Add(outlet);
+            _gothamCareApiContext.SaveChanges();
+
+            return outlet;
         }
 
         public void DeleteOutlet(Outlet outlet)
