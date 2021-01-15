@@ -1,4 +1,5 @@
 using GothamCareApi.Models;
+using GothamCareApi.OutletData;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +32,7 @@ namespace GothamCareApi
 
             services.AddControllers();
             services.AddEntityFrameworkNpgsql().AddDbContext<GothamCareApiContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("GothamCareApiConnection")));
+            services.AddScoped<IOutletData, SqlOutletData>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "GothamCareApi", Version = "v1" });
