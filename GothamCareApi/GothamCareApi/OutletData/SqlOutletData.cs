@@ -23,7 +23,9 @@ namespace GothamCareApi.OutletData
 
         public void DeleteOutlet(Outlet outlet)
         {
-            throw new NotImplementedException();
+            _gothamCareApiContext.Outlets.Remove(outlet);
+            _gothamCareApiContext.SaveChanges();
+
         }
 
         public Outlet GetOutlet(int Id)

@@ -65,5 +65,21 @@ namespace GothamCareApi.Controllers
 
             return NotFound($"Outlet with id: {Id} was not found");
         }
+
+        [HttpDelete]
+        [Route("api/[controller]/{id:int}")]
+        public IActionResult DeleteOutlet(int Id)
+        {
+            var outlet = _outletData.GetOutlet(Id);
+            
+            if(outlet != null)
+            {
+                _outletData.DeleteOutlet(outlet);
+
+                return Ok();
+            }
+
+            return NotFound($"Outlet with Id: {Id} was not found");
+        }
     }
 }
