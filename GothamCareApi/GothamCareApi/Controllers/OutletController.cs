@@ -49,5 +49,21 @@ namespace GothamCareApi.Controllers
             return Created(HttpContext.Request.Scheme + "://" + HttpContext.Request.Host + HttpContext.Request.Path + "/" + outlet.Id, outlet);
         }
 
+        [HttpPatch]
+        [Route("api/[controller]/{id:int}")]
+        public IActionResult ModifyOutlet(int Id, Outlet outlet)
+        {
+            var existingOutlet = _outletData.GetOutlet(Id);
+            
+            if(existingOutlet != null)
+            {
+                outlet.Id = existingOutlet.Id;
+                _outletData.ModifyOutlet(outlet);
+
+                return Ok(outlet);
+            }
+
+            return NotFound($"Outlet with id: {Id} was not found");
+        }
     }
 }

@@ -39,7 +39,14 @@ namespace GothamCareApi.OutletData
 
         public Outlet ModifyOutlet(Outlet outlet)
         {
-            throw new NotImplementedException();
+            var id = outlet.Id;
+            var oldOutlet = _gothamCareApiContext.Outlets.Find(id);
+            _gothamCareApiContext.Outlets.Remove(oldOutlet);
+            _gothamCareApiContext.Outlets.Add(outlet);
+            _gothamCareApiContext.SaveChanges();
+
+            return outlet;
+
         }
     }
 }
