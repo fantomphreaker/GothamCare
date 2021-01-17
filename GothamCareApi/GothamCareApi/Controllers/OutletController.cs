@@ -42,7 +42,7 @@ namespace GothamCareApi.Controllers
 
         [HttpPost]
         [Route("api/[controller]")]
-        public IActionResult GetOutlet(Outlet outlet)
+        public IActionResult AddOutlet(Outlet outlet)
         {
             _outletData.AddOutlet(outlet);
 

@@ -14,5 +14,7 @@ namespace GothamCareApi.Models
         }
 
         public DbSet<Outlet> Outlets { get; set; }
+
+        public DbSet<Volunteer> Volunteers { get; set; }
     }
 }

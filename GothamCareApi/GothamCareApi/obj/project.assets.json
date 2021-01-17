@@ -1041,11 +1041,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Assignments\\GothamCare\\GothamCareApi\\GothamCareApi\\GothamCareApi.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCareExp\\GothamCareApi\\GothamCareApi\\GothamCareApi.csproj",
       "projectName": "GothamCareApi",
-      "projectPath": "E:\\Assignments\\GothamCare\\GothamCareApi\\GothamCareApi\\GothamCareApi.csproj",
+      "projectPath": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCareExp\\GothamCareApi\\GothamCareApi\\GothamCareApi.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "E:\\Assignments\\GothamCare\\GothamCareApi\\GothamCareApi\\obj\\",
+      "outputPath": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCareExp\\GothamCareApi\\GothamCareApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
