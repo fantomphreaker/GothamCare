@@ -47,7 +47,7 @@ namespace GothamCareApi.OutletData
             _gothamCareApiContext.Outlets.Add(outlet);
             _gothamCareApiContext.SaveChanges();
 
-            return outlet;
+            return outlet
 
         }
     }
