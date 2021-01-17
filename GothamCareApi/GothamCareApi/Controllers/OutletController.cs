@@ -26,6 +26,20 @@ namespace GothamCareApi.Controllers
             return Ok(_outletData.GetOutlets());
         }
 
+        [HttpGet]
+        [Route("api/[controller]/{id:int}")]
+        public IActionResult GetOutlet(int Id)
+        {
+            var outlet = _outletData.GetOutlet(Id);
+            if(outlet != null)
+            {
+                return Ok(outlet);
+            }
+
+            return NotFound($"Outlet with id: {Id} was not found! ");
+
+        }
+
         [HttpPost]
         [Route("api/[controller]")]
         public IActionResult GetOutlet(Outlet outlet)

@@ -28,7 +28,8 @@ namespace GothamCareApi.OutletData
 
         public Outlet GetOutlet(int Id)
         {
-            return _gothamCareApiContext.Outlets.SingleOrDefault(x => x.Id == Id);
+            var outlet = _gothamCareApiContext.Outlets.Find(Id);
+            return outlet;
         }
 
         public List<Outlet> GetOutlets()

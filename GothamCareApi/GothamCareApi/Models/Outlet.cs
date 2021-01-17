@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace GothamCareApi.Models
 {
     public class Outlet
-    {
+    {   
+        [Key]
         public int Id { get; set; }
         
         public string OutletName { get; set; }
