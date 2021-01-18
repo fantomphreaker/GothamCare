@@ -22,7 +22,8 @@ namespace GothamCareApi.VolunteerData
 
         public void DeleteVolunteer(Volunteer volunteer)
         {
-            throw new NotImplementedException();
+            _gothamCareApiContext.Volunteers.Remove(volunteer);
+            _gothamCareApiContext.SaveChanges();
         }
 
         public Volunteer GetVolunteer(int Id)
@@ -39,7 +40,14 @@ namespace GothamCareApi.VolunteerData
 
         public Volunteer ModifyVolunteer(Volunteer volunteer)
         {
-            throw new NotImplementedException();
+            var id = volunteer.Id;
+            var oldVolunteer = _gothamCareApiContext.Volunteers.Find(id);
+            _gothamCareApiContext.Volunteers.Remove(oldVolunteer);
+            _gothamCareApiContext.Volunteers.Add(volunteer);
+            _gothamCareApiContext.SaveChanges();
+
+            return volunteer;
+
         }
     }
 }

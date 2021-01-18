@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace GothamCareApi.Migrations
 {
     [DbContext(typeof(GothamCareApiContext))]
-    [Migration("20210117044257_InitialMigration")]
+    [Migration("20210118044715_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,6 +52,33 @@ namespace GothamCareApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Outlets");
+                });
+
+            modelBuilder.Entity("GothamCareApi.Models.Volunteer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
+
+                    b.Property<int>("OutletID")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("VolunteerAddress")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("VolunteerDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("VolunteerName")
+                        .HasColumnType("text");
+
+                    b.Property<string>("VolunteerPhoneNumber")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Volunteers");
                 });
 #pragma warning restore 612, 618
         }
