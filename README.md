@@ -77,7 +77,16 @@ ER diagram is drawn after listing out tables and their relationships.
 * Add Volunteer - POST
 
 * Admin Authentication - POST
-	- verify email and password
+	- Verify email and password
+
+## How to Migrate API
+
+* Install postgreSQL and pgAdmin 4 in your system and make sure pgAdmin 4 is running.
+* Create a new Login/Group Role with **superuser** privileges with the following data:
+
+	Name: **gothamcare**
+	Password: **abcd**
+ 
 
 
 
