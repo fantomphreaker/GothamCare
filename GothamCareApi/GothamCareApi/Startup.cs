@@ -1,3 +1,4 @@
+using GothamCareApi.AdminData;
 using GothamCareApi.Models;
 using GothamCareApi.OutletData;
 using GothamCareApi.VolunteerData;
@@ -35,6 +36,7 @@ namespace GothamCareApi
             services.AddEntityFrameworkNpgsql().AddDbContext<GothamCareApiContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("GothamCareApiConnection")));
             services.AddScoped<IOutletData, SqlOutletData>();
             services.AddScoped<IVolunteerData, SqlVolunteerData>();
+            services.AddScoped<IAdminData, SqlAdminData>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "GothamCareApi", Version = "v1" });
