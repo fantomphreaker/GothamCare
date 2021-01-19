@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace GothamCareApi.Migrations
 {
     [DbContext(typeof(GothamCareApiContext))]
-    [Migration("20210118044715_InitialMigration")]
+    [Migration("20210119043029_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

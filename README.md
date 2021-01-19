@@ -39,3 +39,45 @@ Described above is a problem statement and relative use cases. If your team has 
 7. Use proper naming conventions for variables, classes, method names across the project. Use comments to describe the intent of the code you are writing.
 8. Push the source code, documents, and diagrams to a GitHub repository daily.
 
+# Solution and Logic
+
+## ER Diagram
+
+ER diagram is drawn after listing out tables and their relationships.
+
+
+![alt text](https://github.com/fantomphreaker/GothamCare/blob/master/ER%20and%20Queries.png?raw=true)
+
+## API Endpoints
+
+* List Outlets (current and upcoming three days) - GET
+	- List outletname
+	- Street Name
+	- Nearest Landmark
+	- No. of available food packets
+	- Food Type
+	- Required No. of volunteers.
+
+* List a single Outlet by Id
+
+* Add Outlet - POST
+	- Outlet Name
+	- Street Name
+	- Nearest Landmark
+	- Food Type
+	- Required No. of volunteers.
+
+* Edit Outlet - PATCH
+	- Edit the details of an Outlet 
+
+* Delete Outlet - DELETE
+	- Delete the Outlet from the db
+
+
+* Add Volunteer - POST
+
+* Admin Authentication - POST
+	- verify email and password
+
+
+
