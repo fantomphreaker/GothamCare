@@ -89,10 +89,11 @@ ER diagram is drawn after listing out tables and their relationships.
  
 * If you want to use another Login/Group Role, make sure it has superuser privileges, then go to the project folder and open the *appsettings.Development.json* file and make changes to the value of the key *ConnectionStrings* as per the following,
 
-	
+```json	
     "ConnectionStrings": {
         "GothamCareApiConnection": "User ID = <insert your group role name here>;Password=<insert your group role password here>;Server=localhost;Port=<insert port value here, default value is 5432>;Database=GothamCareApi.dev;Integrated Security=true; Pooling=true;"
     }
+```
 
 * Open the solution in Visual Studio 2019, go to Tools -> NuGet Package Manager -> Package Manager Console. 
 * Make sure postgreSQL server is running in the background.
