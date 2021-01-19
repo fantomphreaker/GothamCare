@@ -101,9 +101,11 @@ ER diagram is drawn after listing out tables and their relationships.
 ```console
 PM>Add-Migration
 ```
-Enter a Name(eg: InitialMigration) when it asks for it and press Enter. After it is migrated successfully enter:
+Enter a Name(eg: InitialMigration) when it asks for it and press Enter. 
+
+* After it is migrated successfully enter:
 ```console
 PM>Update-Database
 ```
-This will create the database and create tables. You can see the database and the tables from pgAdmin 4 
+This will create the database and create tables. The connection between database and API is now established successfully. You can see the newly created database and the tables from pgAdmin 4 
 
