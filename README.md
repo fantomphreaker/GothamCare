@@ -84,7 +84,7 @@ ER diagram is drawn after listing out tables and their relationships.
 * Install postgreSQL and pgAdmin 4 in your system and make sure pgAdmin 4 is running.
 * Create a new Login/Group Role with **superuser** privileges with the following data:
 
-	Name: **gothamcare**
+	Name: **gothamcare** |
 	Password: **abcd**
  
 
