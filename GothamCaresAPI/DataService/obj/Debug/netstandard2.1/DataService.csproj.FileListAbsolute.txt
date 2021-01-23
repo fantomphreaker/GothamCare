@@ -1,0 +1,9 @@
+C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\DataService\bin\Debug\netstandard2.1\DataService.deps.json
+C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\DataService\bin\Debug\netstandard2.1\DataService.dll
+C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\DataService\bin\Debug\netstandard2.1\DataService.pdb
+C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\DataService\obj\Debug\netstandard2.1\DataService.csprojAssemblyReference.cache
+C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\DataService\obj\Debug\netstandard2.1\DataService.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\DataService\obj\Debug\netstandard2.1\DataService.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\DataService\obj\Debug\netstandard2.1\DataService.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\DataService\obj\Debug\netstandard2.1\DataService.dll
+C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\DataService\obj\Debug\netstandard2.1\DataService.pdb
