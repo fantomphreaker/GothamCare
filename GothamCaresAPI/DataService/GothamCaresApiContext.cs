@@ -22,10 +22,31 @@ namespace DataService
             modelBuilder.Entity<Volunteer>()
                 .Property(p => p.Id)
                 .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<Admin>().HasData(new Admin
+            {
+                Email = "abcd@gmail.com",
+                Password = "abcd"
+
+
+            }, new Admin
+            {
+                Email = "efgh@gmail.com",
+                Password = "efgh"
+
+            }, new Admin
+            {
+                Email = "ijkl@gmail.com",
+                Password = "ijkl"
+            }
+            );
+
         }
 
         public DbSet<Outlet> Outlets { get; set; }
 
         public DbSet<Volunteer> Volunteers { get; set; }
+
+        public DbSet<Admin> Admins { get; set; }
     }
 }

@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DataService.Migrations
 {
     [DbContext(typeof(GothamCaresApiContext))]
-    [Migration("20210123180400_InitialMigration")]
+    [Migration("20210123192425_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,6 +20,37 @@ namespace DataService.Migrations
                 .UseIdentityByDefaultColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 63)
                 .HasAnnotation("ProductVersion", "5.0.2");
+
+            modelBuilder.Entity("DataService.Models.Admin", b =>
+                {
+                    b.Property<string>("Email")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Email");
+
+                    b.ToTable("Admins");
+
+                    b.HasData(
+                        new
+                        {
+                            Email = "abcd@gmail.com",
+                            Password = "abcd"
+                        },
+                        new
+                        {
+                            Email = "efgh@gmail.com",
+                            Password = "efgh"
+                        },
+                        new
+                        {
+                            Email = "ijkl@gmail.com",
+                            Password = "ijkl"
+                        });
+                });
 
             modelBuilder.Entity("DataService.Models.Outlet", b =>
                 {

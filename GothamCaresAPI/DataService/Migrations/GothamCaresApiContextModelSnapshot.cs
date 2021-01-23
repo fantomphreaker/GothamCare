@@ -19,6 +19,37 @@ namespace DataService.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63)
                 .HasAnnotation("ProductVersion", "5.0.2");
 
+            modelBuilder.Entity("DataService.Models.Admin", b =>
+                {
+                    b.Property<string>("Email")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Email");
+
+                    b.ToTable("Admins");
+
+                    b.HasData(
+                        new
+                        {
+                            Email = "abcd@gmail.com",
+                            Password = "abcd"
+                        },
+                        new
+                        {
+                            Email = "efgh@gmail.com",
+                            Password = "efgh"
+                        },
+                        new
+                        {
+                            Email = "ijkl@gmail.com",
+                            Password = "ijkl"
+                        });
+                });
+
             modelBuilder.Entity("DataService.Models.Outlet", b =>
                 {
                     b.Property<int>("Id")

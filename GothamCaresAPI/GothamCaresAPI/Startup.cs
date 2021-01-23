@@ -1,3 +1,4 @@
+using BusinessService.AdminService;
 using BusinessService.OutletService;
 using BusinessService.VolunteerService;
 using DataService;
@@ -36,6 +37,7 @@ namespace GothamCaresAPI
             services.AddEntityFrameworkNpgsql().AddDbContext<GothamCaresApiContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("GothamCaresApiConnection")));
             services.AddScoped<IOutletService, OutletService>();
             services.AddScoped<IVolunteerService, VolunteerService>();
+            services.AddScoped<IAdminService, AdminService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "GothamCaresAPI", Version = "v1" });
