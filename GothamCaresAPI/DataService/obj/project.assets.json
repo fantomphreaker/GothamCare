@@ -1199,11 +1199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\DataService\\DataService.csproj",
+      "projectUniqueName": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\DataService\\DataService.csproj",
       "projectName": "DataService",
-      "projectPath": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\DataService\\DataService.csproj",
+      "projectPath": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\DataService\\DataService.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\DataService\\obj\\",
+      "outputPath": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\DataService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -10,3 +10,15 @@ C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\BusinessService\obj\Debug\net
 C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\BusinessService\obj\Debug\netstandard2.1\BusinessService.csproj.CopyComplete
 C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\BusinessService\obj\Debug\netstandard2.1\BusinessService.dll
 C:\Users\LENOVO\Desktop\Experiments\GothamCaresAPI\BusinessService\obj\Debug\netstandard2.1\BusinessService.pdb
+E:\Assignments\GothamCare\GothamCaresAPI\BusinessService\bin\Debug\netstandard2.1\BusinessService.deps.json
+E:\Assignments\GothamCare\GothamCaresAPI\BusinessService\bin\Debug\netstandard2.1\BusinessService.dll
+E:\Assignments\GothamCare\GothamCaresAPI\BusinessService\bin\Debug\netstandard2.1\BusinessService.pdb
+E:\Assignments\GothamCare\GothamCaresAPI\BusinessService\bin\Debug\netstandard2.1\DataService.dll
+E:\Assignments\GothamCare\GothamCaresAPI\BusinessService\bin\Debug\netstandard2.1\DataService.pdb
+E:\Assignments\GothamCare\GothamCaresAPI\BusinessService\obj\Debug\netstandard2.1\BusinessService.csprojAssemblyReference.cache
+E:\Assignments\GothamCare\GothamCaresAPI\BusinessService\obj\Debug\netstandard2.1\BusinessService.AssemblyInfoInputs.cache
+E:\Assignments\GothamCare\GothamCaresAPI\BusinessService\obj\Debug\netstandard2.1\BusinessService.AssemblyInfo.cs
+E:\Assignments\GothamCare\GothamCaresAPI\BusinessService\obj\Debug\netstandard2.1\BusinessService.csproj.CoreCompileInputs.cache
+E:\Assignments\GothamCare\GothamCaresAPI\BusinessService\obj\Debug\netstandard2.1\BusinessService.csproj.CopyComplete
+E:\Assignments\GothamCare\GothamCaresAPI\BusinessService\obj\Debug\netstandard2.1\BusinessService.dll
+E:\Assignments\GothamCare\GothamCaresAPI\BusinessService\obj\Debug\netstandard2.1\BusinessService.pdb

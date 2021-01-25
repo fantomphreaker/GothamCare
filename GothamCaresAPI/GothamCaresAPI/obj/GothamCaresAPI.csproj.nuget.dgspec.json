@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\GothamCaresAPI\\GothamCaresAPI.csproj": {}
+    "E:\\Assignments\\GothamCare\\GothamCaresAPI\\GothamCaresAPI\\GothamCaresAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\BusinessService\\BusinessService.csproj": {
+    "E:\\Assignments\\GothamCare\\GothamCaresAPI\\BusinessService\\BusinessService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\BusinessService\\BusinessService.csproj",
+        "projectUniqueName": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\BusinessService\\BusinessService.csproj",
         "projectName": "BusinessService",
-        "projectPath": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\BusinessService\\BusinessService.csproj",
+        "projectPath": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\BusinessService\\BusinessService.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\BusinessService\\obj\\",
+        "outputPath": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\BusinessService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\DataService\\DataService.csproj": {
-                "projectPath": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\DataService\\DataService.csproj"
+              "E:\\Assignments\\GothamCare\\GothamCaresAPI\\DataService\\DataService.csproj": {
+                "projectPath": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\DataService\\DataService.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\DataService\\DataService.csproj": {
+    "E:\\Assignments\\GothamCare\\GothamCaresAPI\\DataService\\DataService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\DataService\\DataService.csproj",
+        "projectUniqueName": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\DataService\\DataService.csproj",
         "projectName": "DataService",
-        "projectPath": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\DataService\\DataService.csproj",
+        "projectPath": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\DataService\\DataService.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\DataService\\obj\\",
+        "outputPath": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\DataService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\GothamCaresAPI\\GothamCaresAPI.csproj": {
+    "E:\\Assignments\\GothamCare\\GothamCaresAPI\\GothamCaresAPI\\GothamCaresAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\GothamCaresAPI\\GothamCaresAPI.csproj",
+        "projectUniqueName": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\GothamCaresAPI\\GothamCaresAPI.csproj",
         "projectName": "GothamCaresAPI",
-        "projectPath": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\GothamCaresAPI\\GothamCaresAPI.csproj",
+        "projectPath": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\GothamCaresAPI\\GothamCaresAPI.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\GothamCaresAPI\\obj\\",
+        "outputPath": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\GothamCaresAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -162,8 +162,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\BusinessService\\BusinessService.csproj": {
-                "projectPath": "C:\\Users\\LENOVO\\Desktop\\Experiments\\GothamCaresAPI\\BusinessService\\BusinessService.csproj"
+              "E:\\Assignments\\GothamCare\\GothamCaresAPI\\BusinessService\\BusinessService.csproj": {
+                "projectPath": "E:\\Assignments\\GothamCare\\GothamCaresAPI\\BusinessService\\BusinessService.csproj"
               }
             }
           }
