@@ -38,7 +38,7 @@ namespace BusinessService.OutletService
 
         public List<Outlet> GetOutlets()
         {
-            return _gothamCaresApiContext.Outlets.ToList();
+            return _gothamCaresApiContext.Outlets.OrderBy(x => x.FoodType).ThenBy(x => x.Date).ThenBy(x => x.StreetName).ToList();
         }
 
         public Outlet ModifyOutlet(Outlet outlet)
