@@ -44,9 +44,13 @@ namespace GothamCaresAPI.Controllers
         [Route("api/[controller]")]
         public IActionResult AddOutlet(Outlet outlet)
         {
-            _outletData.AddOutlet(outlet);
+            Outlet addedOutlet = _outletData.AddOutlet(outlet);
+            if (addedOutlet != null)
+            {
+                return Created(HttpContext.Request.Scheme + "://" + HttpContext.Request.Host + HttpContext.Request.Path + "/" + outlet.Id, outlet);
+            }
 
-            return Created(HttpContext.Request.Scheme + "://" + HttpContext.Request.Host + HttpContext.Request.Path + "/" + outlet.Id, outlet);
+            return NotFound("Cannot add outlets with redundant names having the same dates of opening. ");
         }
 
         [HttpPatch]

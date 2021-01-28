@@ -38,5 +38,5 @@ namespace DataService.Models
 
 public enum FoodType
 {
-    Veg, NonVeg, Both
+   Both, Veg, NonVeg
 }

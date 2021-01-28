@@ -14,10 +14,10 @@ They expect the following pages on the website and the features the page should 
 * The outlet name, street name, nearest landmark, total number of available food packets and required number of volunteers must be displayed.
 * Each outlet must indicate the type of available food packets (Veg/Non-Veg/Both).
 * The list must be sorted alphabetically based on the street name and ascending order of the day. //can be implemented during selecting data
-* The outlets that serve both Veg & Non-Veg food must appear on top of the list. //first three rows will be for both Veg and Non-Veg and will be occupied by either of the other only if the number of packets of Veg & Non-Veg are 0 for all three outlets.
+* The outlets that serve both Veg & Non-Veg food must appear on top of the list.
 * Add an Outlet
 * A page which allows adding an outlet with all the details that need to be displayed in the listing page and the date on which the outlet will be serving food. 
-* The name of the outlet must be unique for the day. //functionality can be implemented in the source code. And not at the DB level. Perform check on the date if the outlet name entered is redundant and can be entered only if the date is different.
+* The name of the outlet must be unique for the day. 
 * Only a maximum of 10 outlets can be open in a day, of which only 3 can distribute both Veg & Non-Veg food packets.
 * This page must only be accessible to authorised personnel of the society with their email and provided password.
 * Edit or Delete an Outlet

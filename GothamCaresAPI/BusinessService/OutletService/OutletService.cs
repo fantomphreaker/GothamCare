@@ -17,10 +17,24 @@ namespace BusinessService.OutletService
 
         public Outlet AddOutlet(Outlet outlet)
         {
-            _gothamCaresApiContext.Outlets.Add(outlet);
-            _gothamCaresApiContext.SaveChanges();
+            List<Outlet> outlets = GetOutlets();
+            bool isOutletRedundant = false;
+            foreach (Outlet x in outlets)
+            {
+                if ((x.OutletName == outlet.OutletName) && (x.Date == outlet.Date))
+                {
+                    isOutletRedundant = true;
+                }
+            }
 
-            return outlet;
+            if (!isOutletRedundant)
+            {
+                _gothamCaresApiContext.Outlets.Add(outlet);
+                _gothamCaresApiContext.SaveChanges();
+                return outlet;
+            }
+
+            return null;
         }
 
         public void DeleteOutlet(Outlet outlet)
