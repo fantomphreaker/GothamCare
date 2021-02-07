@@ -22,6 +22,7 @@ namespace GothamCaresAPI
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -32,7 +33,13 @@ namespace GothamCaresAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddCors(options => {
+                options.AddPolicy(MyAllowSpecificOrigins, builder =>
+                {
+                    builder.WithOrigins("https://localhost:4200").AllowAnyHeader().AllowAnyMethod();
+                });
+            });
+          
             services.AddControllers();
             services.AddEntityFrameworkNpgsql().AddDbContext<GothamCaresApiContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("GothamCaresApiConnection")));
             services.AddScoped<IOutletService, OutletService>();
@@ -59,6 +66,8 @@ namespace GothamCaresAPI
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseEndpoints(endpoints =>
             {
