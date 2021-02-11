@@ -53,8 +53,8 @@ namespace GothamCaresAPI.Controllers
             return NotFound("Cannot add outlets with redundant names having the same dates of opening. ");
         }
 
-        [HttpPatch]
-        [Route("api/[controller]/{id:int}")]
+        [HttpPut]
+        [Route("api/[controller]/{id}")]
         public IActionResult ModifyOutlet(int Id, Outlet outlet)
         {
             var existingOutlet = _outletData.GetOutlet(Id);
@@ -80,10 +80,10 @@ namespace GothamCaresAPI.Controllers
             {
                 _outletData.DeleteOutlet(outlet);
 
-                return Ok();
+                return Ok("{ \"response\":\"deleted\"}");
             }
 
-            return NotFound($"Outlet with Id: {Id} was not found");
+            return NotFound(" { \"response\": \"Outlet with Id: "+Id+" was not found\" }");
         }
     }
 }

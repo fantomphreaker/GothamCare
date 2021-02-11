@@ -25,15 +25,15 @@ namespace GothamCaresAPI.Controllers
             Admin admin = _adminData.Login(email, password);
             if (admin == null)
             {
-                return NotFound("Incorrect Email Address");
+                return NotFound("{\"response\":\"Incorrect Email Address\"}");
             }
             else if (!(admin.Password).Equals(password))
             {
-                return NotFound("Incorrect Password");
+                return NotFound("{\"response\":\"Incorrect Password\"}");
             }
             else
             {
-                return Ok("Login Success");
+                return Ok("{\"response\":\"Login Success\"}");
             }
 
 
