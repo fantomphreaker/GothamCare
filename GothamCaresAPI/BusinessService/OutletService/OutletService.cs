@@ -17,6 +17,9 @@ namespace BusinessService.OutletService
 
         public Outlet AddOutlet(Outlet outlet)
         {
+            int count = _gothamCaresApiContext.Outlets.Where(x => x.Date == outlet.Date).Count();
+            int bothcount = _gothamCaresApiContext.Outlets.Where(x => x.Date == outlet.Date && x.FoodType == 0).Count();
+            
             List<Outlet> outlets = GetOutlets();
             bool isOutletRedundant = false;
             foreach (Outlet x in outlets)
@@ -28,10 +31,20 @@ namespace BusinessService.OutletService
             }
 
             if (!isOutletRedundant)
-            {
-                _gothamCaresApiContext.Outlets.Add(outlet);
-                _gothamCaresApiContext.SaveChanges();
-                return outlet;
+            {   
+                if(outlet.FoodType == 0 && bothcount >= 3)
+                {
+                    return null;
+                }
+                
+                if(count < 10)
+                {
+                    _gothamCaresApiContext.Outlets.Add(outlet);
+                    _gothamCaresApiContext.SaveChanges();
+                    return outlet;
+                }
+
+               
             }
 
             return null;
@@ -52,7 +65,10 @@ namespace BusinessService.OutletService
 
         public List<Outlet> GetOutlets()
         {
-            return _gothamCaresApiContext.Outlets.OrderBy(x => x.FoodType).ThenBy(x => x.Date).ThenBy(x => x.StreetName).ToList();
+            DateTime fromdate = DateTime.Today;
+            DateTime todate = DateTime.Today.AddDays(3);
+
+            return _gothamCaresApiContext.Outlets.Where(x => x.Date >= fromdate && x.Date <= todate).OrderBy(x => x.FoodType).ThenBy(x => x.Date).ThenBy(x => x.StreetName).ToList();
         }
 
         public Outlet ModifyOutlet(Outlet outlet)
